@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SilentMeet — Privacy Policy &amp; Terms of Service</title>
+  <meta name="description" content="Privacy Policy and Terms &amp; Conditions for the SilentMeet (Meeting Silent) Android application by Ailab Solutions." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔕</text></svg>" />
+  <style>
+    :root {
+      --emerald: #0b6b43;
+      --emerald-bright: #10b981;
+      --emerald-deep: #074c30;
+      --navy: #0b2a4a;
+      --blue: #1d4ed8;
+      --ink: #0f172a;
+      --body: #334155;
+      --muted: #64748b;
+      --line: #e2e8f0;
+      --bg: #f1f5f9;
+      --card: #ffffff;
+      --radius: 16px;
+      --shadow: 0 10px 30px -12px rgba(11, 42, 74, 0.18);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--body);
+      background: var(--bg);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ---------- Header ---------- */
+    header {
+      background: linear-gradient(135deg, var(--emerald-deep) 0%, var(--emerald) 48%, var(--navy) 100%);
+      color: #fff;
+      padding: 56px 24px 92px;
+      position: relative;
+      overflow: hidden;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      inset: auto -10% -60px -10%;
+      height: 160px;
+      background: radial-gradient(60% 100% at 50% 0%, rgba(16,185,129,.35), transparent 70%);
+      pointer-events: none;
+    }
+    .head-inner { max-width: 900px; margin: 0 auto; position: relative; z-index: 1; }
+    .brand { display: flex; align-items: center; gap: 14px; margin-bottom: 22px; }
+    .brand-badge {
+      width: 52px; height: 52px; border-radius: 14px; flex: none;
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.28);
+      display: grid; place-items: center; font-size: 26px;
+      backdrop-filter: blur(4px);
+    }
+    .brand-name { font-size: 20px; font-weight: 800; letter-spacing: .2px; }
+    .brand-sub { font-size: 13px; opacity: .82; font-weight: 500; }
+    header h1 { margin: 0 0 10px; font-size: clamp(28px, 5vw, 42px); font-weight: 800; line-height: 1.15; letter-spacing: -.5px; }
+    header p.lede { margin: 0; font-size: 16px; max-width: 640px; opacity: .9; }
+    .updated {
+      display: inline-flex; align-items: center; gap: 8px;
+      margin-top: 22px; padding: 7px 14px; border-radius: 999px;
+      background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.24);
+      font-size: 13px; font-weight: 600;
+    }
+    .updated .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--emerald-bright); box-shadow: 0 0 0 4px rgba(16,185,129,.25); }
+
+    /* ---------- Doc tabs ---------- */
+    .doctabs {
+      max-width: 900px; margin: -44px auto 0; padding: 0 24px;
+      position: relative; z-index: 2;
+      display: flex; gap: 12px; flex-wrap: wrap;
+    }
+    .doctab {
+      flex: 1 1 220px; background: var(--card); border-radius: 14px;
+      padding: 16px 20px; box-shadow: var(--shadow);
+      border: 1px solid var(--line); display: flex; align-items: center; gap: 12px;
+      color: var(--ink); font-weight: 700; transition: transform .15s ease, box-shadow .15s ease;
+    }
+    .doctab:hover { transform: translateY(-2px); text-decoration: none; box-shadow: 0 16px 34px -14px rgba(11,42,74,.28); }
+    .doctab .ico { width: 38px; height: 38px; border-radius: 10px; display: grid; place-items: center; font-size: 18px; color: #fff; flex: none; }
+    .doctab.priv .ico { background: linear-gradient(135deg, var(--emerald), var(--emerald-bright)); }
+    .doctab.terms .ico { background: linear-gradient(135deg, var(--navy), var(--blue)); }
+    .doctab small { display: block; font-weight: 500; color: var(--muted); font-size: 12.5px; }
+
+    /* ---------- Layout ---------- */
+    main { max-width: 900px; margin: 0 auto; padding: 40px 24px 24px; }
+    .card {
+      background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 36px clamp(20px, 4vw, 44px); box-shadow: var(--shadow); margin-bottom: 32px;
+    }
+    .section-tag {
+      display: inline-block; font-size: 12px; font-weight: 800; letter-spacing: 1.4px;
+      text-transform: uppercase; padding: 5px 12px; border-radius: 999px; margin-bottom: 14px;
+    }
+    .tag-emerald { color: var(--emerald); background: rgba(16,185,129,.12); }
+    .tag-navy { color: var(--blue); background: rgba(29,78,216,.10); }
+    h2.doc-title { font-size: clamp(24px, 4vw, 32px); color: var(--ink); margin: 0 0 6px; font-weight: 800; letter-spacing: -.4px; }
+    .doc-meta { color: var(--muted); font-size: 14px; margin: 0 0 28px; }
+
+    .toc { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 18px 22px; margin: 0 0 30px; }
+    .toc h3 { margin: 0 0 10px; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); }
+    .toc ol { margin: 0; padding-left: 20px; columns: 2; column-gap: 32px; }
+    .toc li { margin: 4px 0; break-inside: avoid; }
+    .toc a { color: var(--body); font-weight: 500; }
+
+    h3.item { color: var(--ink); font-size: 19px; font-weight: 700; margin: 32px 0 8px; scroll-margin-top: 20px; }
+    h3.item .num { color: var(--emerald); font-weight: 800; margin-right: 8px; }
+    .terms h3.item .num { color: var(--blue); }
+    p { margin: 0 0 14px; }
+    ul.clean { margin: 0 0 16px; padding-left: 22px; }
+    ul.clean li { margin: 7px 0; }
+    strong { color: var(--ink); }
+
+    .callout {
+      border-left: 4px solid var(--emerald-bright);
+      background: linear-gradient(90deg, rgba(16,185,129,.08), rgba(16,185,129,0));
+      border-radius: 0 12px 12px 0; padding: 16px 20px; margin: 18px 0 22px;
+    }
+    .callout.blue { border-left-color: var(--blue); background: linear-gradient(90deg, rgba(29,78,216,.07), rgba(29,78,216,0)); }
+    .callout strong { display: block; margin-bottom: 4px; }
+
+    .perm-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin: 18px 0 8px; }
+    .perm { border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; background: #fff; }
+    .perm h4 { margin: 0 0 6px; font-size: 15px; color: var(--ink); display: flex; align-items: center; gap: 8px; }
+    .perm h4 .pico { font-size: 16px; }
+    .perm p { margin: 0; font-size: 14px; color: var(--muted); }
+
+    .divider { height: 1px; background: var(--line); border: 0; margin: 40px 0; }
+
+    footer { max-width: 900px; margin: 0 auto; padding: 8px 24px 56px; color: var(--muted); font-size: 13.5px; text-align: center; }
+    footer .contact-card {
+      background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 26px; box-shadow: var(--shadow); margin-bottom: 24px; text-align: left;
+    }
+    footer .contact-card h3 { margin: 0 0 6px; color: var(--ink); font-size: 18px; }
+    .back-top { display: inline-block; margin-top: 8px; font-weight: 600; }
+
+    @media (max-width: 620px) {
+      .toc ol { columns: 1; }
+      header { padding: 44px 20px 84px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="head-inner">
+      <div class="brand">
+        <div class="brand-badge">🔕</div>
+        <div>
+          <div class="brand-name">SilentMeet</div>
+          <div class="brand-sub">Meeting Silent · by Ailab Solutions</div>
+        </div>
+      </div>
+      <h1>Privacy Policy &amp; Terms of Service</h1>
+      <p class="lede">How SilentMeet handles your location, data, and privacy — and the terms under which you use the app.</p>
+      <span class="updated"><span class="dot"></span> Last updated: July 17, 2026</span>
+    </div>
+  </header>
+
+  <nav class="doctabs">
+    <a class="doctab priv" href="#privacy">
+      <span class="ico">🛡️</span>
+      <span>Privacy Policy<small>Location, data &amp; your rights</small></span>
+    </a>
+    <a class="doctab terms" href="#terms">
+      <span class="ico">📜</span>
+      <span>Terms &amp; Conditions<small>Rules for using SilentMeet</small></span>
+    </a>
+  </nav>
+
+  <main>
+    <!-- ================= PRIVACY POLICY ================= -->
+    <section class="card" id="privacy">
+      <span class="section-tag tag-emerald">Privacy Policy</span>
+      <h2 class="doc-title">Privacy Policy</h2>
+      <p class="doc-meta">Effective date: July 17, 2026 &nbsp;•&nbsp; Applies to the SilentMeet (Meeting Silent) Android application.</p>
+
+      <div class="toc">
+        <h3>Contents</h3>
+        <ol>
+          <li><a href="#p-intro">Introduction</a></li>
+          <li><a href="#p-collect">Information We Collect</a></li>
+          <li><a href="#p-location">Location Data &amp; Geofencing</a></li>
+          <li><a href="#p-local">Local Storage on Your Device</a></li>
+          <li><a href="#p-permissions">Device Permissions</a></li>
+          <li><a href="#p-use">How We Use Information</a></li>
+          <li><a href="#p-sharing">Data Sharing &amp; Third Parties</a></li>
+          <li><a href="#p-retention">Data Retention &amp; Security</a></li>
+          <li><a href="#p-rights">Your Rights &amp; Choices</a></li>
+          <li><a href="#p-children">Children's Privacy</a></li>
+          <li><a href="#p-changes">Changes to This Policy</a></li>
+          <li><a href="#p-contact">Contact Us</a></li>
+        </ol>
+      </div>
+
+      <h3 class="item" id="p-intro"><span class="num">1.</span> Introduction</h3>
+      <p>SilentMeet (also distributed as "Meeting Silent") is developed by <strong>Ailab Solutions</strong> ("we", "us", "our"). The app automatically silences your phone based on <strong>location-based Silent Zones</strong> and <strong>scheduled or prayer-time reminders</strong>, so you are never interrupted where silence matters. This Privacy Policy explains what information the app accesses, why, and the choices you have.</p>
+      <p>We built SilentMeet to be <strong>privacy-first and offline-capable</strong>. The core silencing engine runs on your device, and the majority of your settings never leave your phone.</p>
+
+      <h3 class="item" id="p-collect"><span class="num">2.</span> Information We Collect</h3>
+      <ul class="clean">
+        <li><strong>Location data</strong> — used to detect when you enter or leave your Silent Zones (see Section 3).</li>
+        <li><strong>Account information (optional)</strong> — if you choose to sign in with Google, we receive your name, email address, and profile photo through Google / Firebase Authentication. Signing in is optional; the app can be used as a guest.</li>
+        <li><strong>App preferences and content you create</strong> — your Silent Zones, schedules, sound/volume profiles, selected language, faith profile, and similar settings.</li>
+        <li><strong>Subscription status</strong> — whether you are on a free trial, guest, or premium plan, so your entitlement is honored across reinstalls.</li>
+        <li><strong>Approximate diagnostic and device info</strong> — such as operating-system version and coarse region, used to apply the correct prayer-time calculation method and to keep the app stable.</li>
+      </ul>
+      <p>We do <strong>not</strong> collect your contacts, call logs, messages, photos, or microphone audio. We do not sell your personal information.</p>
+
+      <h3 class="item" id="p-location"><span class="num">3.</span> Location Data &amp; Geofencing</h3>
+      <div class="callout">
+        <strong>Background location disclosure</strong>
+        SilentMeet uses location data — including <strong>in the background</strong> — solely to detect when you enter or exit a Silent Zone you have created, so it can automatically silence or restore your phone. Background location is never used for advertising, tracking, or profiling.
+      </div>
+      <p>Location is central to the app's purpose:</p>
+      <ul class="clean">
+        <li><strong>Foreground location</strong> lets you place a Silent Zone on the map when adding a location.</li>
+        <li><strong>Background ("Allow all the time") location</strong> lets the geofencing engine trigger auto-silence even when the app is closed. Without it, zone-based silencing cannot run while the app is in the background.</li>
+        <li>Your coordinates are <strong>processed on-device</strong> to compute zone entry/exit and to calculate accurate prayer times for your area. Your continuous location history is <strong>not</strong> transmitted to us or stored on our servers.</li>
+      </ul>
+      <p>You may deny or revoke location access at any time in your device settings. Location-based features will simply stop working; the rest of the app continues to function.</p>
+
+      <h3 class="item" id="p-local"><span class="num">4.</span> Local Storage on Your Device</h3>
+      <p>Most of your data lives <strong>only on your phone</strong>, in the app's private local storage. This includes your Silent Zones, schedules, sound profiles, language and faith preferences, and permission choices. This data is removed when you uninstall the app or clear its storage.</p>
+      <p>If you sign in, a minimal set of data (such as your subscription status and faith identity) may be stored in <strong>Google Firebase (Cloud Firestore)</strong> so your plan and preferences can be restored if you reinstall or switch devices.</p>
+
+      <h3 class="item" id="p-permissions"><span class="num">5.</span> Device Permissions We Request</h3>
+      <p>SilentMeet requests permissions <strong>contextually</strong> — only when a feature needs them — and explains why beforehand:</p>
+      <div class="perm-grid">
+        <div class="perm"><h4><span class="pico">📍</span> Location</h4><p>Detect Silent Zone entry/exit and compute local prayer times.</p></div>
+        <div class="perm"><h4><span class="pico">🔔</span> Notifications</h4><p>Show silence status, reminders, and prayer/schedule alerts.</p></div>
+        <div class="perm"><h4><span class="pico">🌙</span> Do Not Disturb access</h4><p>Silence and restore your ringer/DND state automatically.</p></div>
+        <div class="perm"><h4><span class="pico">⏰</span> Exact alarms</h4><p>Fire prayer and scheduled reminders at the precise time.</p></div>
+        <div class="perm"><h4><span class="pico">🔋</span> Battery optimization</h4><p>Allow reliable background silencing without the OS killing the service.</p></div>
+        <div class="perm"><h4><span class="pico">🔄</span> Run at startup</h4><p>Re-arm your zones and schedules after a device restart.</p></div>
+      </div>
+
+      <h3 class="item" id="p-use"><span class="num">6.</span> How We Use Information</h3>
+      <ul class="clean">
+        <li>To automatically silence and restore your phone in your Silent Zones and on your schedules.</li>
+        <li>To calculate and deliver accurate prayer times and reminders for your region.</li>
+        <li>To authenticate you (if you sign in) and to honor your subscription across devices and reinstalls.</li>
+        <li>To keep the app secure, stable, and functioning as intended.</li>
+      </ul>
+
+      <h3 class="item" id="p-sharing"><span class="num">7.</span> Data Sharing &amp; Third-Party Services</h3>
+      <p>We do not sell or rent your personal data. Limited data is processed by trusted providers strictly to operate the app:</p>
+      <ul class="clean">
+        <li><strong>Google Firebase</strong> (Authentication &amp; Cloud Firestore) — optional sign-in and subscription/preference sync.</li>
+        <li><strong>Google Play Services &amp; Google Maps</strong> — map display, location services, and geofencing on Android.</li>
+        <li><strong>Google Play Billing</strong> — if you purchase a subscription, payment is handled by Google; we do not receive your card details.</li>
+      </ul>
+      <p>These providers process data under their own privacy policies. We share information only as needed to provide the service or where required by law.</p>
+
+      <h3 class="item" id="p-retention"><span class="num">8.</span> Data Retention &amp; Security</h3>
+      <p>On-device data is retained until you delete it, clear the app's storage, or uninstall. Any cloud-synced data (for signed-in users) is retained while your account is active and deleted on request. We rely on the security of Google's infrastructure and Android's app-sandboxing to protect your information, and we limit collection to what the features genuinely require.</p>
+
+      <h3 class="item" id="p-rights"><span class="num">9.</span> Your Rights &amp; Choices</h3>
+      <ul class="clean">
+        <li><strong>Access &amp; control</strong> — view and edit your zones, schedules, and preferences at any time in the app.</li>
+        <li><strong>Revoke permissions</strong> — turn off location, notifications, or DND access in your device settings whenever you like.</li>
+        <li><strong>Delete your data</strong> — clear the app's storage or uninstall to remove local data; contact us to delete any cloud-synced account data.</li>
+        <li><strong>Use as a guest</strong> — you can use core features without creating an account.</li>
+      </ul>
+
+      <h3 class="item" id="p-children"><span class="num">10.</span> Children's Privacy</h3>
+      <p>SilentMeet is intended for a general audience and is not directed to children under 13. We do not knowingly collect personal information from children. If you believe a child has provided us data, please contact us and we will remove it.</p>
+
+      <h3 class="item" id="p-changes"><span class="num">11.</span> Changes to This Policy</h3>
+      <p>We may update this Privacy Policy from time to time. Material changes will be reflected by updating the "Last updated" date at the top of this page. Continued use of the app after an update constitutes acceptance of the revised policy.</p>
+
+      <h3 class="item" id="p-contact"><span class="num">12.</span> Contact Us</h3>
+      <p>Questions about this Privacy Policy or your data? Reach us at <a href="mailto:oscariqbgroup@gmail.com">oscariqbgroup@gmail.com</a>.</p>
+      <p><a class="back-top" href="#privacy">↑ Back to top</a></p>
+    </section>
+
+    <!-- ================= TERMS ================= -->
+    <section class="card terms" id="terms">
+      <span class="section-tag tag-navy">Terms &amp; Conditions</span>
+      <h2 class="doc-title">Terms &amp; Conditions</h2>
+      <p class="doc-meta">Effective date: July 17, 2026 &nbsp;•&nbsp; Please read these terms carefully before using SilentMeet.</p>
+
+      <div class="toc">
+        <h3>Contents</h3>
+        <ol>
+          <li><a href="#t-accept">Acceptance of Terms</a></li>
+          <li><a href="#t-license">License to Use the App</a></li>
+          <li><a href="#t-automation">Silencing &amp; Automation Disclaimer</a></li>
+          <li><a href="#t-subs">Subscriptions &amp; Payments</a></li>
+          <li><a href="#t-conduct">Acceptable Use</a></li>
+          <li><a href="#t-ip">Intellectual Property</a></li>
+          <li><a href="#t-warranty">Disclaimer of Warranties</a></li>
+          <li><a href="#t-liability">Limitation of Liability</a></li>
+          <li><a href="#t-termination">Termination</a></li>
+          <li><a href="#t-law">Governing Law</a></li>
+          <li><a href="#t-changes">Changes to These Terms</a></li>
+          <li><a href="#t-contact">Contact</a></li>
+        </ol>
+      </div>
+
+      <h3 class="item" id="t-accept"><span class="num">1.</span> Acceptance of Terms</h3>
+      <p>By downloading, installing, or using SilentMeet ("the app"), you agree to be bound by these Terms &amp; Conditions and by our Privacy Policy above. If you do not agree, please do not use the app.</p>
+
+      <h3 class="item" id="t-license"><span class="num">2.</span> License to Use the App</h3>
+      <p>We grant you a personal, non-exclusive, non-transferable, revocable license to use SilentMeet on devices you own or control, for your own lawful, non-commercial use, in accordance with these terms and the Google Play Terms of Service.</p>
+
+      <h3 class="item" id="t-automation"><span class="num">3.</span> Silencing &amp; Automation Disclaimer</h3>
+      <div class="callout blue">
+        <strong>Important — please read</strong>
+        SilentMeet automates your ringer, Do Not Disturb, and volume based on location and schedules. Automatic silencing depends on your device's GPS accuracy, operating-system behavior, battery settings, and manufacturer restrictions, and may be delayed or may not trigger in all conditions.
+      </div>
+      <p>You are solely responsible for your device's ringer state and for any calls, alarms, or notifications you may miss while the phone is silenced. Do not rely on SilentMeet as the sole safeguard in situations where missing a call or alert could cause harm or loss. You are responsible for verifying your ringer state when it matters.</p>
+
+      <h3 class="item" id="t-subs"><span class="num">4.</span> Subscriptions &amp; Payments</h3>
+      <ul class="clean">
+        <li>SilentMeet may offer free, trial, guest, and premium tiers. Certain features may require a paid subscription.</li>
+        <li>Purchases are processed through <strong>Google Play Billing</strong>. Prices, trial lengths, and renewal terms are shown at the point of purchase.</li>
+        <li>Subscriptions renew automatically unless cancelled before the renewal date, and can be managed or cancelled anytime in your Google Play account.</li>
+        <li>Except where required by law or Google Play policy, payments are non-refundable.</li>
+      </ul>
+
+      <h3 class="item" id="t-conduct"><span class="num">5.</span> Acceptable Use</h3>
+      <p>You agree not to misuse the app, including attempting to reverse-engineer, decompile, tamper with, or circumvent its security or licensing, using it for any unlawful purpose, or interfering with its normal operation.</p>
+
+      <h3 class="item" id="t-ip"><span class="num">6.</span> Intellectual Property</h3>
+      <p>The app, its name, logo, design, and all associated content are the property of Ailab Solutions and are protected by applicable intellectual-property laws. These terms do not grant you any ownership rights in the app.</p>
+
+      <h3 class="item" id="t-warranty"><span class="num">7.</span> Disclaimer of Warranties</h3>
+      <p>The app is provided on an <strong>"as is"</strong> and <strong>"as available"</strong> basis, without warranties of any kind, whether express or implied, including fitness for a particular purpose, reliability, or uninterrupted or error-free operation.</p>
+
+      <h3 class="item" id="t-liability"><span class="num">8.</span> Limitation of Liability</h3>
+      <p>To the maximum extent permitted by law, Ailab Solutions shall not be liable for any indirect, incidental, special, or consequential damages — including missed calls, notifications, or alarms, or any loss arising from reliance on the app's automatic silencing — resulting from your use of, or inability to use, SilentMeet.</p>
+
+      <h3 class="item" id="t-termination"><span class="num">9.</span> Termination</h3>
+      <p>You may stop using the app and uninstall it at any time. We may suspend or terminate access if you breach these terms or misuse the app. Provisions that by their nature should survive termination will continue to apply.</p>
+
+      <h3 class="item" id="t-law"><span class="num">10.</span> Governing Law</h3>
+      <p>These terms are governed by the laws of the Islamic Republic of Pakistan, without regard to conflict-of-law principles. Any disputes will be subject to the competent courts of that jurisdiction, unless a different mandatory jurisdiction applies to you as a consumer.</p>
+
+      <h3 class="item" id="t-changes"><span class="num">11.</span> Changes to These Terms</h3>
+      <p>We may revise these Terms &amp; Conditions from time to time. The "Last updated" date at the top reflects the latest version. Continued use of the app after changes take effect constitutes acceptance of the revised terms.</p>
+
+      <h3 class="item" id="t-contact"><span class="num">12.</span> Contact</h3>
+      <p>For questions about these terms, contact us at <a href="mailto:oscariqbgroup@gmail.com">oscariqbgroup@gmail.com</a>.</p>
+      <p><a class="back-top" href="#terms">↑ Back to top</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contact-card">
+      <h3>SilentMeet · Meeting Silent</h3>
+      <p style="margin:0">Developed by <strong>Ailab Solutions</strong> · Contact: <a href="mailto:oscariqbgroup@gmail.com">oscariqbgroup@gmail.com</a></p>
+    </div>
+    <p>© 2026 Ailab Solutions. All rights reserved. &nbsp;•&nbsp; <a href="#privacy">Privacy Policy</a> &nbsp;•&nbsp; <a href="#terms">Terms &amp; Conditions</a></p>
+  </footer>
+</body>
+</html>
