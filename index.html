@@ -4,23 +4,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SilentMeet — Privacy Policy &amp; Terms of Service</title>
-  <meta name="description" content="Privacy Policy and Terms &amp; Conditions for the SilentMeet (Meeting Silent) Android application by Ailab Solutions." />
+  <meta name="description" content="Privacy Policy and Terms &amp; Conditions for the SilentMeet (Meeting Silent) Android application by Muhammad Zaid Asghar." />
+  <meta name="theme-color" content="#0a1730" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔕</text></svg>" />
   <style>
     :root {
-      --emerald: #0b6b43;
-      --emerald-bright: #10b981;
-      --emerald-deep: #074c30;
-      --navy: #0b2a4a;
-      --blue: #1d4ed8;
-      --ink: #0f172a;
-      --body: #334155;
-      --muted: #64748b;
-      --line: #e2e8f0;
-      --bg: #f1f5f9;
-      --card: #ffffff;
-      --radius: 16px;
-      --shadow: 0 10px 30px -12px rgba(11, 42, 74, 0.18);
+      --blue: #3b82f6;
+      --blue-bright: #60a5fa;
+      --blue-deep: #1d4ed8;
+      --cyan: #22d3ee;
+      --navy-0: #060d1c;
+      --navy-1: #0a1730;
+      --navy-2: #0d1f3c;
+      --ink: #f8fafc;
+      --body: #cbd6e6;
+      --muted: #8ba0bd;
+      --line: rgba(255,255,255,0.10);
+      --glass: rgba(255,255,255,0.045);
+      --glass-2: rgba(255,255,255,0.07);
+      --radius: 18px;
+      --shadow: 0 24px 60px -22px rgba(0,0,0,0.75);
+      --glow: 0 0 0 1px rgba(96,165,250,0.20), 0 18px 50px -18px rgba(37,99,235,0.55);
     }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
@@ -28,124 +32,163 @@
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       color: var(--body);
-      background: var(--bg);
-      line-height: 1.7;
+      line-height: 1.75;
       -webkit-font-smoothing: antialiased;
+      background:
+        radial-gradient(1100px 620px at 82% -8%, rgba(34,211,238,0.14), transparent 60%),
+        radial-gradient(1000px 640px at 8% 4%, rgba(37,99,235,0.24), transparent 58%),
+        linear-gradient(180deg, var(--navy-1) 0%, var(--navy-0) 46%, #04091534 100%),
+        var(--navy-0);
+      background-attachment: fixed;
+      min-height: 100vh;
     }
-    a { color: var(--blue); text-decoration: none; }
+    a { color: var(--blue-bright); text-decoration: none; }
     a:hover { text-decoration: underline; }
 
     /* ---------- Header ---------- */
-    header {
-      background: linear-gradient(135deg, var(--emerald-deep) 0%, var(--emerald) 48%, var(--navy) 100%);
-      color: #fff;
-      padding: 56px 24px 92px;
-      position: relative;
-      overflow: hidden;
+    header { padding: 60px 24px 40px; position: relative; }
+    .head-inner { max-width: 920px; margin: 0 auto; position: relative; z-index: 1; }
+    .brand { display: flex; align-items: center; gap: 18px; margin-bottom: 30px; }
+    .logo-wrap {
+      width: 70px; height: 70px; border-radius: 20px; flex: none;
+      background: linear-gradient(160deg, rgba(59,130,246,0.28), rgba(34,211,238,0.12));
+      border: 1px solid rgba(255,255,255,0.18);
+      box-shadow: var(--glow), inset 0 1px 0 rgba(255,255,255,0.22);
+      display: grid; place-items: center; overflow: hidden;
+      backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
     }
-    header::after {
-      content: "";
-      position: absolute;
-      inset: auto -10% -60px -10%;
-      height: 160px;
-      background: radial-gradient(60% 100% at 50% 0%, rgba(16,185,129,.35), transparent 70%);
-      pointer-events: none;
+    .logo-img { width: 100%; height: 100%; object-fit: cover; display: none; }
+    .logo-svg { width: 42px; height: 42px; }
+    .brand-name { font-size: 23px; font-weight: 800; letter-spacing: .2px; color: var(--ink); }
+    .brand-sub { font-size: 13px; color: var(--muted); font-weight: 500; }
+    header h1 {
+      margin: 0 0 12px; font-size: clamp(30px, 5.4vw, 46px); font-weight: 800; line-height: 1.12;
+      letter-spacing: -.6px; color: var(--ink);
+      background: linear-gradient(120deg, #ffffff 0%, #bcd3f5 55%, #7cc4e6 100%);
+      -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
     }
-    .head-inner { max-width: 900px; margin: 0 auto; position: relative; z-index: 1; }
-    .brand { display: flex; align-items: center; gap: 14px; margin-bottom: 22px; }
-    .brand-badge {
-      width: 52px; height: 52px; border-radius: 14px; flex: none;
-      background: rgba(255,255,255,.12);
-      border: 1px solid rgba(255,255,255,.28);
-      display: grid; place-items: center; font-size: 26px;
-      backdrop-filter: blur(4px);
-    }
-    .brand-name { font-size: 20px; font-weight: 800; letter-spacing: .2px; }
-    .brand-sub { font-size: 13px; opacity: .82; font-weight: 500; }
-    header h1 { margin: 0 0 10px; font-size: clamp(28px, 5vw, 42px); font-weight: 800; line-height: 1.15; letter-spacing: -.5px; }
-    header p.lede { margin: 0; font-size: 16px; max-width: 640px; opacity: .9; }
+    header p.lede { margin: 0; font-size: 16.5px; max-width: 660px; color: var(--body); }
     .updated {
-      display: inline-flex; align-items: center; gap: 8px;
-      margin-top: 22px; padding: 7px 14px; border-radius: 999px;
-      background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.24);
-      font-size: 13px; font-weight: 600;
+      display: inline-flex; align-items: center; gap: 9px; margin-top: 24px; padding: 8px 16px;
+      border-radius: 999px; background: var(--glass); border: 1px solid var(--line);
+      font-size: 13px; font-weight: 600; color: var(--body);
+      backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
     }
-    .updated .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--emerald-bright); box-shadow: 0 0 0 4px rgba(16,185,129,.25); }
+    .updated .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 0 4px rgba(34,211,238,0.22); }
 
     /* ---------- Doc tabs ---------- */
-    .doctabs {
-      max-width: 900px; margin: -44px auto 0; padding: 0 24px;
-      position: relative; z-index: 2;
-      display: flex; gap: 12px; flex-wrap: wrap;
-    }
+    .doctabs { max-width: 920px; margin: 34px auto 0; padding: 0 24px; display: flex; gap: 14px; flex-wrap: wrap; }
     .doctab {
-      flex: 1 1 220px; background: var(--card); border-radius: 14px;
-      padding: 16px 20px; box-shadow: var(--shadow);
-      border: 1px solid var(--line); display: flex; align-items: center; gap: 12px;
-      color: var(--ink); font-weight: 700; transition: transform .15s ease, box-shadow .15s ease;
+      flex: 1 1 230px; border-radius: 16px; padding: 18px 22px;
+      background: var(--glass); border: 1px solid var(--line); box-shadow: var(--shadow);
+      display: flex; align-items: center; gap: 14px; color: var(--ink); font-weight: 700;
+      backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+      transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease;
     }
-    .doctab:hover { transform: translateY(-2px); text-decoration: none; box-shadow: 0 16px 34px -14px rgba(11,42,74,.28); }
-    .doctab .ico { width: 38px; height: 38px; border-radius: 10px; display: grid; place-items: center; font-size: 18px; color: #fff; flex: none; }
-    .doctab.priv .ico { background: linear-gradient(135deg, var(--emerald), var(--emerald-bright)); }
-    .doctab.terms .ico { background: linear-gradient(135deg, var(--navy), var(--blue)); }
+    .doctab:hover { transform: translateY(-3px); text-decoration: none; border-color: rgba(96,165,250,0.5); box-shadow: var(--glow); }
+    .doctab .ico { width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; font-size: 19px; flex: none; color: #fff; }
+    .doctab.priv .ico { background: linear-gradient(135deg, var(--blue-deep), var(--cyan)); }
+    .doctab.terms .ico { background: linear-gradient(135deg, #1e3a8a, var(--blue)); }
     .doctab small { display: block; font-weight: 500; color: var(--muted); font-size: 12.5px; }
 
     /* ---------- Layout ---------- */
-    main { max-width: 900px; margin: 0 auto; padding: 40px 24px 24px; }
+    main { max-width: 920px; margin: 0 auto; padding: 40px 24px 16px; }
     .card {
-      background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
-      padding: 36px clamp(20px, 4vw, 44px); box-shadow: var(--shadow); margin-bottom: 32px;
+      background: var(--glass); border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 38px clamp(20px, 4vw, 46px); box-shadow: var(--shadow); margin-bottom: 34px;
+      backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); position: relative;
+    }
+    .card::before {
+      content: ""; position: absolute; inset: 0 0 auto 0; height: 1px; border-radius: var(--radius) var(--radius) 0 0;
+      background: linear-gradient(90deg, transparent, rgba(96,165,250,0.55), transparent);
     }
     .section-tag {
       display: inline-block; font-size: 12px; font-weight: 800; letter-spacing: 1.4px;
-      text-transform: uppercase; padding: 5px 12px; border-radius: 999px; margin-bottom: 14px;
+      text-transform: uppercase; padding: 6px 13px; border-radius: 999px; margin-bottom: 16px;
+      border: 1px solid var(--line);
     }
-    .tag-emerald { color: var(--emerald); background: rgba(16,185,129,.12); }
-    .tag-navy { color: var(--blue); background: rgba(29,78,216,.10); }
-    h2.doc-title { font-size: clamp(24px, 4vw, 32px); color: var(--ink); margin: 0 0 6px; font-weight: 800; letter-spacing: -.4px; }
+    .tag-blue { color: var(--blue-bright); background: rgba(59,130,246,0.14); }
+    .tag-cyan { color: var(--cyan); background: rgba(34,211,238,0.12); }
+    h2.doc-title { font-size: clamp(25px, 4vw, 33px); color: var(--ink); margin: 0 0 6px; font-weight: 800; letter-spacing: -.4px; }
     .doc-meta { color: var(--muted); font-size: 14px; margin: 0 0 28px; }
 
-    .toc { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 18px 22px; margin: 0 0 30px; }
-    .toc h3 { margin: 0 0 10px; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); }
-    .toc ol { margin: 0; padding-left: 20px; columns: 2; column-gap: 32px; }
-    .toc li { margin: 4px 0; break-inside: avoid; }
+    .toc { background: rgba(255,255,255,0.03); border: 1px solid var(--line); border-radius: 14px; padding: 18px 24px; margin: 0 0 32px; }
+    .toc h3 { margin: 0 0 12px; font-size: 12.5px; text-transform: uppercase; letter-spacing: 1.2px; color: var(--muted); }
+    .toc ol { margin: 0; padding-left: 20px; columns: 2; column-gap: 34px; }
+    .toc li { margin: 5px 0; break-inside: avoid; }
     .toc a { color: var(--body); font-weight: 500; }
+    .toc a:hover { color: var(--blue-bright); }
 
-    h3.item { color: var(--ink); font-size: 19px; font-weight: 700; margin: 32px 0 8px; scroll-margin-top: 20px; }
-    h3.item .num { color: var(--emerald); font-weight: 800; margin-right: 8px; }
-    .terms h3.item .num { color: var(--blue); }
+    h3.item { color: var(--ink); font-size: 19.5px; font-weight: 700; margin: 34px 0 8px; scroll-margin-top: 20px; }
+    h3.item .num { color: var(--cyan); font-weight: 800; margin-right: 8px; }
+    .terms h3.item .num { color: var(--blue-bright); }
     p { margin: 0 0 14px; }
     ul.clean { margin: 0 0 16px; padding-left: 22px; }
-    ul.clean li { margin: 7px 0; }
+    ul.clean li { margin: 8px 0; }
+    ul.clean li::marker { color: var(--blue); }
     strong { color: var(--ink); }
 
     .callout {
-      border-left: 4px solid var(--emerald-bright);
-      background: linear-gradient(90deg, rgba(16,185,129,.08), rgba(16,185,129,0));
-      border-radius: 0 12px 12px 0; padding: 16px 20px; margin: 18px 0 22px;
+      border-left: 3px solid var(--cyan);
+      background: linear-gradient(90deg, rgba(34,211,238,0.10), rgba(34,211,238,0));
+      border-radius: 0 14px 14px 0; padding: 18px 22px; margin: 20px 0 24px;
     }
-    .callout.blue { border-left-color: var(--blue); background: linear-gradient(90deg, rgba(29,78,216,.07), rgba(29,78,216,0)); }
-    .callout strong { display: block; margin-bottom: 4px; }
+    .callout.blue { border-left-color: var(--blue-bright); background: linear-gradient(90deg, rgba(59,130,246,0.12), rgba(59,130,246,0)); }
+    .callout strong { display: block; margin-bottom: 5px; color: var(--ink); }
 
     .perm-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin: 18px 0 8px; }
-    .perm { border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; background: #fff; }
+    .perm { border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; background: rgba(255,255,255,0.03); transition: border-color .15s ease, transform .15s ease; }
+    .perm:hover { border-color: rgba(96,165,250,0.45); transform: translateY(-2px); }
     .perm h4 { margin: 0 0 6px; font-size: 15px; color: var(--ink); display: flex; align-items: center; gap: 8px; }
     .perm h4 .pico { font-size: 16px; }
     .perm p { margin: 0; font-size: 14px; color: var(--muted); }
 
-    .divider { height: 1px; background: var(--line); border: 0; margin: 40px 0; }
-
-    footer { max-width: 900px; margin: 0 auto; padding: 8px 24px 56px; color: var(--muted); font-size: 13.5px; text-align: center; }
-    footer .contact-card {
-      background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
-      padding: 26px; box-shadow: var(--shadow); margin-bottom: 24px; text-align: left;
+    /* ---------- Footer ---------- */
+    footer { max-width: 920px; margin: 0 auto; padding: 10px 24px 120px; color: var(--muted); font-size: 13.5px; text-align: center; }
+    .contact-card {
+      background: linear-gradient(160deg, rgba(59,130,246,0.14), rgba(34,211,238,0.05));
+      border: 1px solid rgba(96,165,250,0.28); border-radius: var(--radius);
+      padding: 32px clamp(20px,4vw,40px); box-shadow: var(--glow); margin-bottom: 26px; text-align: left;
+      backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
     }
-    footer .contact-card h3 { margin: 0 0 6px; color: var(--ink); font-size: 18px; }
-    .back-top { display: inline-block; margin-top: 8px; font-weight: 600; }
+    .contact-card h3 { margin: 0 0 6px; color: var(--ink); font-size: 20px; }
+    .contact-card p { margin: 0 0 18px; color: var(--body); }
+    .wa-btn {
+      display: inline-flex; align-items: center; gap: 11px; padding: 13px 22px; border-radius: 14px;
+      background: linear-gradient(135deg, #25d366, #1ebe5b); color: #04210f; font-weight: 800; font-size: 15px;
+      box-shadow: 0 14px 34px -12px rgba(37,211,102,0.6); transition: transform .15s ease, box-shadow .15s ease;
+    }
+    .wa-btn:hover { transform: translateY(-2px); text-decoration: none; box-shadow: 0 18px 42px -12px rgba(37,211,102,0.72); }
+    .wa-btn svg { width: 22px; height: 22px; }
 
-    @media (max-width: 620px) {
+    .socials { display: flex; gap: 12px; margin-top: 20px; flex-wrap: wrap; }
+    .soc {
+      width: 46px; height: 46px; border-radius: 13px; display: grid; place-items: center;
+      background: rgba(255,255,255,0.05); border: 1px solid var(--line);
+      transition: transform .15s ease, border-color .15s ease, background .15s ease;
+    }
+    .soc:hover { transform: translateY(-3px); border-color: rgba(96,165,250,0.5); background: rgba(59,130,246,0.16); }
+    .soc svg { width: 22px; height: 22px; }
+
+    .foot-meta { line-height: 1.9; }
+    .foot-meta a { color: var(--blue-bright); }
+
+    /* ---------- Floating WhatsApp ---------- */
+    .wa-float {
+      position: fixed; right: 22px; bottom: 22px; z-index: 50;
+      display: inline-flex; align-items: center; gap: 10px; padding: 14px 20px 14px 16px;
+      border-radius: 999px; background: linear-gradient(135deg, #25d366, #1ebe5b); color: #04210f;
+      font-weight: 800; font-size: 14.5px; box-shadow: 0 16px 40px -10px rgba(37,211,102,0.65);
+      transition: transform .16s ease, box-shadow .16s ease;
+    }
+    .wa-float:hover { transform: translateY(-3px) scale(1.02); text-decoration: none; box-shadow: 0 22px 52px -12px rgba(37,211,102,0.8); }
+    .wa-float svg { width: 26px; height: 26px; }
+    .wa-float .lbl { white-space: nowrap; }
+    @media (max-width: 560px) {
+      .wa-float .lbl { display: none; }
+      .wa-float { padding: 16px; }
       .toc ol { columns: 1; }
-      header { padding: 44px 20px 84px; }
+      header { padding: 46px 20px 30px; }
     }
   </style>
 </head>
@@ -153,10 +196,26 @@
   <header>
     <div class="head-inner">
       <div class="brand">
-        <div class="brand-badge">🔕</div>
+        <div class="logo-wrap" aria-label="SilentMeet logo">
+          <!-- Drop a real logo.png into the repo root and it auto-replaces the bell mark below. -->
+          <img src="logo.png" alt="SilentMeet" class="logo-img"
+               onload="this.style.display='block'; var f=document.getElementById('logo-fallback'); if(f) f.style.display='none';" />
+          <svg id="logo-fallback" class="logo-svg" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+            <defs>
+              <linearGradient id="bellGrad" x1="12" y1="8" x2="52" y2="56" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#60a5fa"/><stop offset="1" stop-color="#22d3ee"/>
+              </linearGradient>
+            </defs>
+            <path d="M32 9a4 4 0 0 1 4 4v1.3c7.6 1.8 12.5 8.6 12.5 17.2v6.1l3.7 5.6a1.8 1.8 0 0 1-1.5 2.8H13.3a1.8 1.8 0 0 1-1.5-2.8l3.7-5.6v-6.1c0-8.6 4.9-15.4 12.5-17.2V13a4 4 0 0 1 4-4Z"
+                  fill="url(#bellGrad)"/>
+            <path d="M25.5 50a6.5 6.5 0 0 0 13 0Z" fill="url(#bellGrad)"/>
+            <path d="M15 13 49 51" stroke="#0a1730" stroke-width="5.4" stroke-linecap="round"/>
+            <path d="M15 13 49 51" stroke="#e2f0ff" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+        </div>
         <div>
           <div class="brand-name">SilentMeet</div>
-          <div class="brand-sub">Meeting Silent · by Ailab Solutions</div>
+          <div class="brand-sub">Meeting Silent · by Muhammad Zaid Asghar</div>
         </div>
       </div>
       <h1>Privacy Policy &amp; Terms of Service</h1>
@@ -179,7 +238,7 @@
   <main>
     <!-- ================= PRIVACY POLICY ================= -->
     <section class="card" id="privacy">
-      <span class="section-tag tag-emerald">Privacy Policy</span>
+      <span class="section-tag tag-cyan">Privacy Policy</span>
       <h2 class="doc-title">Privacy Policy</h2>
       <p class="doc-meta">Effective date: July 17, 2026 &nbsp;•&nbsp; Applies to the SilentMeet (Meeting Silent) Android application.</p>
 
@@ -202,7 +261,7 @@
       </div>
 
       <h3 class="item" id="p-intro"><span class="num">1.</span> Introduction</h3>
-      <p>SilentMeet (also distributed as "Meeting Silent") is developed by <strong>Ailab Solutions</strong> ("we", "us", "our"). The app automatically silences your phone based on <strong>location-based Silent Zones</strong> and <strong>scheduled or prayer-time reminders</strong>, so you are never interrupted where silence matters. This Privacy Policy explains what information the app accesses, why, and the choices you have.</p>
+      <p>SilentMeet (also distributed as "Meeting Silent") is developed by <strong>Muhammad Zaid Asghar</strong> ("we", "us", "our"). The app automatically silences your phone based on <strong>location-based Silent Zones</strong> and <strong>scheduled or prayer-time reminders</strong>, so you are never interrupted where silence matters. This Privacy Policy explains what information the app accesses, why, and the choices you have.</p>
       <p>We built SilentMeet to be <strong>privacy-first and offline-capable</strong>. The core silencing engine runs on your device, and the majority of your settings never leave your phone.</p>
 
       <h3 class="item" id="p-collect"><span class="num">2.</span> Information We Collect</h3>
@@ -278,13 +337,13 @@
       <p>We may update this Privacy Policy from time to time. Material changes will be reflected by updating the "Last updated" date at the top of this page. Continued use of the app after an update constitutes acceptance of the revised policy.</p>
 
       <h3 class="item" id="p-contact"><span class="num">12.</span> Contact Us</h3>
-      <p>Questions about this Privacy Policy or your data? Reach us at <a href="mailto:oscariqbgroup@gmail.com">oscariqbgroup@gmail.com</a>.</p>
-      <p><a class="back-top" href="#privacy">↑ Back to top</a></p>
+      <p>Questions about this Privacy Policy or your data? Reach us at <a href="mailto:codexzaid001@gmail.com">codexzaid001@gmail.com</a>.</p>
+      <p><a href="#privacy">↑ Back to top</a></p>
     </section>
 
     <!-- ================= TERMS ================= -->
     <section class="card terms" id="terms">
-      <span class="section-tag tag-navy">Terms &amp; Conditions</span>
+      <span class="section-tag tag-blue">Terms &amp; Conditions</span>
       <h2 class="doc-title">Terms &amp; Conditions</h2>
       <p class="doc-meta">Effective date: July 17, 2026 &nbsp;•&nbsp; Please read these terms carefully before using SilentMeet.</p>
 
@@ -331,13 +390,13 @@
       <p>You agree not to misuse the app, including attempting to reverse-engineer, decompile, tamper with, or circumvent its security or licensing, using it for any unlawful purpose, or interfering with its normal operation.</p>
 
       <h3 class="item" id="t-ip"><span class="num">6.</span> Intellectual Property</h3>
-      <p>The app, its name, logo, design, and all associated content are the property of Ailab Solutions and are protected by applicable intellectual-property laws. These terms do not grant you any ownership rights in the app.</p>
+      <p>The app, its name, logo, design, and all associated content are the property of Muhammad Zaid Asghar and are protected by applicable intellectual-property laws. These terms do not grant you any ownership rights in the app.</p>
 
       <h3 class="item" id="t-warranty"><span class="num">7.</span> Disclaimer of Warranties</h3>
       <p>The app is provided on an <strong>"as is"</strong> and <strong>"as available"</strong> basis, without warranties of any kind, whether express or implied, including fitness for a particular purpose, reliability, or uninterrupted or error-free operation.</p>
 
       <h3 class="item" id="t-liability"><span class="num">8.</span> Limitation of Liability</h3>
-      <p>To the maximum extent permitted by law, Ailab Solutions shall not be liable for any indirect, incidental, special, or consequential damages — including missed calls, notifications, or alarms, or any loss arising from reliance on the app's automatic silencing — resulting from your use of, or inability to use, SilentMeet.</p>
+      <p>To the maximum extent permitted by law, Muhammad Zaid Asghar shall not be liable for any indirect, incidental, special, or consequential damages — including missed calls, notifications, or alarms, or any loss arising from reliance on the app's automatic silencing — resulting from your use of, or inability to use, SilentMeet.</p>
 
       <h3 class="item" id="t-termination"><span class="num">9.</span> Termination</h3>
       <p>You may stop using the app and uninstall it at any time. We may suspend or terminate access if you breach these terms or misuse the app. Provisions that by their nature should survive termination will continue to apply.</p>
@@ -349,17 +408,38 @@
       <p>We may revise these Terms &amp; Conditions from time to time. The "Last updated" date at the top reflects the latest version. Continued use of the app after changes take effect constitutes acceptance of the revised terms.</p>
 
       <h3 class="item" id="t-contact"><span class="num">12.</span> Contact</h3>
-      <p>For questions about these terms, contact us at <a href="mailto:oscariqbgroup@gmail.com">oscariqbgroup@gmail.com</a>.</p>
-      <p><a class="back-top" href="#terms">↑ Back to top</a></p>
+      <p>For questions about these terms, contact us at <a href="mailto:codexzaid001@gmail.com">codexzaid001@gmail.com</a>.</p>
+      <p><a href="#terms">↑ Back to top</a></p>
     </section>
   </main>
 
   <footer>
     <div class="contact-card">
       <h3>SilentMeet · Meeting Silent</h3>
-      <p style="margin:0">Developed by <strong>Ailab Solutions</strong> · Contact: <a href="mailto:oscariqbgroup@gmail.com">oscariqbgroup@gmail.com</a></p>
+      <p>Developed by <strong>Muhammad Zaid Asghar</strong> · Have a question or need support? We're happy to help.</p>
+      <a class="wa-btn" href="https://wa.me/923084417971?text=Hi%20Zaid%2C%20I%20have%20a%20query%20regarding%20SilentMeet" target="_blank" rel="noopener">
+        <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.04 3C9.42 3 4.03 8.38 4.03 15c0 2.12.56 4.19 1.62 6.01L4 29l8.2-1.6a12 12 0 0 0 3.84.63h.01c6.62 0 12-5.38 12.01-12S22.66 3 16.04 3Zm0 21.64h-.01a9.6 9.6 0 0 1-4.9-1.34l-.35-.21-3.65.71.72-3.56-.23-.37a9.62 9.62 0 0 1-1.47-5.11c0-5.3 4.32-9.62 9.63-9.62 2.57 0 4.98 1 6.8 2.82a9.55 9.55 0 0 1 2.82 6.81c-.01 5.31-4.33 9.63-9.63 9.63Zm5.28-7.2c-.29-.14-1.71-.85-1.98-.94-.27-.1-.46-.14-.65.15-.19.29-.75.94-.92 1.13-.17.19-.34.22-.63.07-.29-.14-1.22-.45-2.33-1.44-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.59.13-.13.29-.34.43-.51.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.14-.65-1.57-.89-2.15-.24-.56-.48-.48-.65-.49l-.56-.01c-.19 0-.51.07-.77.36-.27.29-1.01.99-1.01 2.42s1.04 2.81 1.18 3c.14.19 2.04 3.12 4.95 4.38.69.3 1.23.48 1.65.61.69.22 1.32.19 1.82.12.56-.08 1.71-.7 1.95-1.37.24-.67.24-1.25.17-1.37-.07-.12-.26-.19-.55-.34Z"/></svg>
+        Contact on WhatsApp
+      </a>
+      <div class="socials">
+        <a class="soc" href="https://wa.me/923084417971?text=Hi%20Zaid%2C%20I%20have%20a%20query%20regarding%20SilentMeet" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp">
+          <svg viewBox="0 0 32 32" fill="#25d366" aria-hidden="true"><path d="M16.04 3C9.42 3 4.03 8.38 4.03 15c0 2.12.56 4.19 1.62 6.01L4 29l8.2-1.6a12 12 0 0 0 3.84.63h.01c6.62 0 12-5.38 12.01-12S22.66 3 16.04 3Zm5.28 14.44c-.29-.14-1.71-.85-1.98-.94-.27-.1-.46-.14-.65.15-.19.29-.75.94-.92 1.13-.17.19-.34.22-.63.07-.29-.14-1.22-.45-2.33-1.44-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.59.13-.13.29-.34.43-.51.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.14-.65-1.57-.89-2.15-.24-.56-.48-.48-.65-.49l-.56-.01c-.19 0-.51.07-.77.36-.27.29-1.01.99-1.01 2.42s1.04 2.81 1.18 3c.14.19 2.04 3.12 4.95 4.38.69.3 1.23.48 1.65.61.69.22 1.32.19 1.82.12.56-.08 1.71-.7 1.95-1.37.24-.67.24-1.25.17-1.37-.07-.12-.26-.19-.55-.34Z"/></svg>
+        </a>
+        <a class="soc" href="https://www.linkedin.com/in/muhammad-zaid-196911367/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="#60a5fa" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.2.8 24 1.77 24h20.45c.98 0 1.78-.8 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+        </a>
+        <a class="soc" href="https://www.facebook.com/profile.php?id=61590801086672" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook">
+          <svg viewBox="0 0 24 24" fill="#60a5fa" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.95.93-1.95 1.89v2.25h3.32l-.53 3.49h-2.79V24C19.61 23.1 24 18.1 24 12.07Z"/></svg>
+        </a>
+      </div>
     </div>
-    <p>© 2026 Ailab Solutions. All rights reserved. &nbsp;•&nbsp; <a href="#privacy">Privacy Policy</a> &nbsp;•&nbsp; <a href="#terms">Terms &amp; Conditions</a></p>
+    <p class="foot-meta">© 2026 Muhammad Zaid Asghar. All rights reserved. &nbsp;•&nbsp; <a href="#privacy">Privacy Policy</a> &nbsp;•&nbsp; <a href="#terms">Terms &amp; Conditions</a><br>Contact: <a href="mailto:codexzaid001@gmail.com">codexzaid001@gmail.com</a></p>
   </footer>
+
+  <!-- Floating WhatsApp -->
+  <a class="wa-float" href="https://wa.me/923084417971?text=Hi%20Zaid%2C%20I%20have%20a%20query%20regarding%20SilentMeet" target="_blank" rel="noopener" aria-label="Contact on WhatsApp">
+    <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.04 3C9.42 3 4.03 8.38 4.03 15c0 2.12.56 4.19 1.62 6.01L4 29l8.2-1.6a12 12 0 0 0 3.84.63h.01c6.62 0 12-5.38 12.01-12S22.66 3 16.04 3Zm0 21.64h-.01a9.6 9.6 0 0 1-4.9-1.34l-.35-.21-3.65.71.72-3.56-.23-.37a9.62 9.62 0 0 1-1.47-5.11c0-5.3 4.32-9.62 9.63-9.62 2.57 0 4.98 1 6.8 2.82a9.55 9.55 0 0 1 2.82 6.81c-.01 5.31-4.33 9.63-9.63 9.63Zm5.28-7.2c-.29-.14-1.71-.85-1.98-.94-.27-.1-.46-.14-.65.15-.19.29-.75.94-.92 1.13-.17.19-.34.22-.63.07-.29-.14-1.22-.45-2.33-1.44-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.59.13-.13.29-.34.43-.51.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.14-.65-1.57-.89-2.15-.24-.56-.48-.48-.65-.49l-.56-.01c-.19 0-.51.07-.77.36-.27.29-1.01.99-1.01 2.42s1.04 2.81 1.18 3c.14.19 2.04 3.12 4.95 4.38.69.3 1.23.48 1.65.61.69.22 1.32.19 1.82.12.56-.08 1.71-.7 1.95-1.37.24-.67.24-1.25.17-1.37-.07-.12-.26-.19-.55-.34Z"/></svg>
+    <span class="lbl">Contact on WhatsApp</span>
+  </a>
 </body>
 </html>
