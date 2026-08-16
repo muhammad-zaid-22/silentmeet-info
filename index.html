@@ -3,192 +3,184 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SilentMeet — Privacy Policy &amp; Terms of Service</title>
+  <title>SilentMeet â€” Privacy Policy &amp; Terms of Service</title>
   <meta name="description" content="Privacy Policy and Terms &amp; Conditions for the SilentMeet (Meeting Silent) Android application by Muhammad Zaid Asghar." />
-  <meta name="theme-color" content="#0a1730" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔕</text></svg>" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>ðŸ”•</text></svg>" />
   <style>
     :root {
-      --blue: #3b82f6;
-      --blue-bright: #60a5fa;
-      --blue-deep: #1d4ed8;
-      --cyan: #22d3ee;
-      --navy-0: #060d1c;
-      --navy-1: #0a1730;
-      --navy-2: #0d1f3c;
-      --ink: #f8fafc;
-      --body: #cbd6e6;
-      --muted: #8ba0bd;
-      --line: rgba(255,255,255,0.10);
-      --glass: rgba(255,255,255,0.045);
-      --glass-2: rgba(255,255,255,0.07);
-      --radius: 18px;
-      --shadow: 0 24px 60px -22px rgba(0,0,0,0.75);
-      --glow: 0 0 0 1px rgba(96,165,250,0.20), 0 18px 50px -18px rgba(37,99,235,0.55);
+      --brand: #2563eb;
+      --brand-dark: #1d4ed8;
+      --brand-soft: #eef4ff;
+      --brand-border: #dbe6ff;
+      --ink: #0f2440;
+      --body: #3f4b5e;
+      --muted: #6b7890;
+      --line: #e6eaf0;
+      --bg: #ffffff;
+      --bg-soft: #f7f9fc;
+      --radius: 14px;
+      --shadow: 0 1px 2px rgba(16,36,64,.04), 0 10px 28px -14px rgba(16,36,64,.14);
     }
     * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       color: var(--body);
-      line-height: 1.75;
+      line-height: 1.7;
+      font-size: 16px;
       -webkit-font-smoothing: antialiased;
-      background:
-        radial-gradient(1100px 620px at 82% -8%, rgba(34,211,238,0.14), transparent 60%),
-        radial-gradient(1000px 640px at 8% 4%, rgba(37,99,235,0.24), transparent 58%),
-        linear-gradient(180deg, var(--navy-1) 0%, var(--navy-0) 46%, #04091534 100%),
-        var(--navy-0);
-      background-attachment: fixed;
+      background: var(--bg);
+      overflow-wrap: break-word;
+      word-wrap: break-word;
       min-height: 100vh;
     }
-    a { color: var(--blue-bright); text-decoration: none; }
+    a { color: var(--brand); text-decoration: none; }
     a:hover { text-decoration: underline; }
 
     /* ---------- Header ---------- */
-    header { padding: 60px 24px 40px; position: relative; }
-    .head-inner { max-width: 920px; margin: 0 auto; position: relative; z-index: 1; }
-    .brand { display: flex; align-items: center; gap: 18px; margin-bottom: 30px; }
+    header { padding: 46px 20px 26px; border-bottom: 1px solid var(--line); background: var(--bg-soft); }
+    .head-inner { max-width: 780px; margin: 0 auto; }
+    .brand { display: flex; align-items: center; gap: 14px; margin-bottom: 24px; }
     .logo-wrap {
-      width: 70px; height: 70px; border-radius: 20px; flex: none;
-      background: linear-gradient(160deg, rgba(59,130,246,0.28), rgba(34,211,238,0.12));
-      border: 1px solid rgba(255,255,255,0.18);
-      box-shadow: var(--glow), inset 0 1px 0 rgba(255,255,255,0.22);
-      display: grid; place-items: center; overflow: hidden;
-      backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+      width: 54px; height: 54px; border-radius: 14px; flex: none;
+      background: linear-gradient(150deg, var(--brand), var(--brand-dark));
+      display: grid; place-items: center; overflow: hidden; box-shadow: var(--shadow);
     }
     .logo-img { width: 100%; height: 100%; object-fit: cover; display: none; }
-    .logo-svg { width: 42px; height: 42px; }
-    .brand-name { font-size: 23px; font-weight: 800; letter-spacing: .2px; color: var(--ink); }
+    .logo-svg { width: 30px; height: 30px; color: #fff; }
+    .brand-name { font-size: 19px; font-weight: 800; letter-spacing: -.2px; color: var(--ink); }
     .brand-sub { font-size: 13px; color: var(--muted); font-weight: 500; }
     header h1 {
-      margin: 0 0 12px; font-size: clamp(30px, 5.4vw, 46px); font-weight: 800; line-height: 1.12;
-      letter-spacing: -.6px; color: var(--ink);
-      background: linear-gradient(120deg, #ffffff 0%, #bcd3f5 55%, #7cc4e6 100%);
-      -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+      margin: 0 0 10px; font-size: clamp(26px, 5vw, 38px); font-weight: 800; line-height: 1.18;
+      letter-spacing: -.5px; color: var(--ink);
     }
-    header p.lede { margin: 0; font-size: 16.5px; max-width: 660px; color: var(--body); }
+    header p.lede { margin: 0; font-size: 16px; max-width: 620px; color: var(--body); }
     .updated {
-      display: inline-flex; align-items: center; gap: 9px; margin-top: 24px; padding: 8px 16px;
-      border-radius: 999px; background: var(--glass); border: 1px solid var(--line);
-      font-size: 13px; font-weight: 600; color: var(--body);
-      backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+      display: inline-flex; align-items: center; gap: 8px; margin-top: 20px; padding: 7px 14px;
+      border-radius: 999px; background: #fff; border: 1px solid var(--line);
+      font-size: 13px; font-weight: 600; color: var(--muted);
     }
-    .updated .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 0 4px rgba(34,211,238,0.22); }
+    .updated .dot { width: 7px; height: 7px; border-radius: 50%; background: #22c55e; }
 
     /* ---------- Doc tabs ---------- */
-    .doctabs { max-width: 920px; margin: 34px auto 0; padding: 0 24px; display: flex; gap: 14px; flex-wrap: wrap; }
+    .doctabs { max-width: 780px; margin: 24px auto 0; padding: 0 20px; display: flex; gap: 12px; flex-wrap: wrap; }
     .doctab {
-      flex: 1 1 230px; border-radius: 16px; padding: 18px 22px;
-      background: var(--glass); border: 1px solid var(--line); box-shadow: var(--shadow);
-      display: flex; align-items: center; gap: 14px; color: var(--ink); font-weight: 700;
-      backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
-      transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease;
+      flex: 1 1 220px; border-radius: 12px; padding: 16px 18px;
+      background: #fff; border: 1px solid var(--line); box-shadow: var(--shadow);
+      display: flex; align-items: center; gap: 12px; color: var(--ink); font-weight: 700;
+      transition: border-color .15s ease, box-shadow .15s ease, transform .15s ease;
     }
-    .doctab:hover { transform: translateY(-3px); text-decoration: none; border-color: rgba(96,165,250,0.5); box-shadow: var(--glow); }
-    .doctab .ico { width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; font-size: 19px; flex: none; color: #fff; }
-    .doctab.priv .ico { background: linear-gradient(135deg, var(--blue-deep), var(--cyan)); }
-    .doctab.terms .ico { background: linear-gradient(135deg, #1e3a8a, var(--blue)); }
+    .doctab:hover { transform: translateY(-2px); text-decoration: none; border-color: var(--brand); box-shadow: 0 8px 22px -10px rgba(37,99,235,.34); }
+    .doctab .ico { width: 38px; height: 38px; border-radius: 10px; display: grid; place-items: center; font-size: 18px; flex: none; color: #fff; }
+    .doctab.priv .ico { background: linear-gradient(135deg, var(--brand), var(--brand-dark)); }
+    .doctab.terms .ico { background: linear-gradient(135deg, var(--ink), #24406b); }
     .doctab small { display: block; font-weight: 500; color: var(--muted); font-size: 12.5px; }
 
     /* ---------- Layout ---------- */
-    main { max-width: 920px; margin: 0 auto; padding: 40px 24px 16px; }
+    main { max-width: 780px; margin: 0 auto; padding: 32px 20px 8px; }
     .card {
-      background: var(--glass); border: 1px solid var(--line); border-radius: var(--radius);
-      padding: 38px clamp(20px, 4vw, 46px); box-shadow: var(--shadow); margin-bottom: 34px;
-      backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); position: relative;
-    }
-    .card::before {
-      content: ""; position: absolute; inset: 0 0 auto 0; height: 1px; border-radius: var(--radius) var(--radius) 0 0;
-      background: linear-gradient(90deg, transparent, rgba(96,165,250,0.55), transparent);
+      background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 32px clamp(20px, 4vw, 42px); box-shadow: var(--shadow); margin-bottom: 28px;
     }
     .section-tag {
-      display: inline-block; font-size: 12px; font-weight: 800; letter-spacing: 1.4px;
-      text-transform: uppercase; padding: 6px 13px; border-radius: 999px; margin-bottom: 16px;
-      border: 1px solid var(--line);
+      display: inline-block; font-size: 11.5px; font-weight: 800; letter-spacing: 1.2px;
+      text-transform: uppercase; padding: 5px 12px; border-radius: 999px; margin-bottom: 14px;
+      color: var(--brand); background: var(--brand-soft); border: 1px solid var(--brand-border);
     }
-    .tag-blue { color: var(--blue-bright); background: rgba(59,130,246,0.14); }
-    .tag-cyan { color: var(--cyan); background: rgba(34,211,238,0.12); }
-    h2.doc-title { font-size: clamp(25px, 4vw, 33px); color: var(--ink); margin: 0 0 6px; font-weight: 800; letter-spacing: -.4px; }
-    .doc-meta { color: var(--muted); font-size: 14px; margin: 0 0 28px; }
+    .tag-blue { color: var(--brand); background: var(--brand-soft); border-color: var(--brand-border); }
+    .tag-cyan { color: var(--brand-dark); background: var(--brand-soft); border-color: var(--brand-border); }
+    h2.doc-title { font-size: clamp(23px, 4vw, 30px); color: var(--ink); margin: 0 0 6px; font-weight: 800; letter-spacing: -.4px; }
+    .doc-meta { color: var(--muted); font-size: 14px; margin: 0 0 26px; }
 
-    .toc { background: rgba(255,255,255,0.03); border: 1px solid var(--line); border-radius: 14px; padding: 18px 24px; margin: 0 0 32px; }
-    .toc h3 { margin: 0 0 12px; font-size: 12.5px; text-transform: uppercase; letter-spacing: 1.2px; color: var(--muted); }
-    .toc ol { margin: 0; padding-left: 20px; columns: 2; column-gap: 34px; }
-    .toc li { margin: 5px 0; break-inside: avoid; }
+    .toc { background: var(--bg-soft); border: 1px solid var(--line); border-radius: 12px; padding: 18px 22px; margin: 0 0 30px; }
+    .toc h3 { margin: 0 0 12px; font-size: 12px; text-transform: uppercase; letter-spacing: 1.1px; color: var(--muted); }
+    .toc ol { margin: 0; padding-left: 20px; columns: 2; column-gap: 30px; }
+    .toc li { margin: 6px 0; break-inside: avoid; }
     .toc a { color: var(--body); font-weight: 500; }
-    .toc a:hover { color: var(--blue-bright); }
+    .toc a:hover { color: var(--brand); }
 
-    h3.item { color: var(--ink); font-size: 19.5px; font-weight: 700; margin: 34px 0 8px; scroll-margin-top: 20px; }
-    h3.item .num { color: var(--cyan); font-weight: 800; margin-right: 8px; }
-    .terms h3.item .num { color: var(--blue-bright); }
+    h3.item { color: var(--ink); font-size: 18.5px; font-weight: 700; margin: 32px 0 8px; scroll-margin-top: 20px; }
+    h3.item .num { color: var(--brand); font-weight: 800; margin-right: 8px; }
+    .terms h3.item .num { color: var(--brand-dark); }
     p { margin: 0 0 14px; }
     ul.clean { margin: 0 0 16px; padding-left: 22px; }
-    ul.clean li { margin: 8px 0; }
-    ul.clean li::marker { color: var(--blue); }
+    ul.clean li { margin: 7px 0; }
+    ul.clean li::marker { color: var(--brand); }
     strong { color: var(--ink); }
 
     .callout {
-      border-left: 3px solid var(--cyan);
-      background: linear-gradient(90deg, rgba(34,211,238,0.10), rgba(34,211,238,0));
-      border-radius: 0 14px 14px 0; padding: 18px 22px; margin: 20px 0 24px;
+      border-left: 3px solid var(--brand);
+      background: var(--brand-soft);
+      border-radius: 0 10px 10px 0; padding: 16px 20px; margin: 18px 0 22px;
     }
-    .callout.blue { border-left-color: var(--blue-bright); background: linear-gradient(90deg, rgba(59,130,246,0.12), rgba(59,130,246,0)); }
-    .callout strong { display: block; margin-bottom: 5px; color: var(--ink); }
+    .callout.blue { border-left-color: var(--brand-dark); }
+    .callout strong { display: block; margin-bottom: 4px; color: var(--ink); }
 
-    .perm-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin: 18px 0 8px; }
-    .perm { border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; background: rgba(255,255,255,0.03); transition: border-color .15s ease, transform .15s ease; }
-    .perm:hover { border-color: rgba(96,165,250,0.45); transform: translateY(-2px); }
-    .perm h4 { margin: 0 0 6px; font-size: 15px; color: var(--ink); display: flex; align-items: center; gap: 8px; }
+    .perm-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; margin: 16px 0 8px; }
+    .perm { border: 1px solid var(--line); border-radius: 12px; padding: 15px 16px; background: var(--bg-soft); transition: border-color .15s ease; }
+    .perm:hover { border-color: var(--brand-border); }
+    .perm h4 { margin: 0 0 5px; font-size: 15px; color: var(--ink); display: flex; align-items: center; gap: 8px; }
     .perm h4 .pico { font-size: 16px; }
     .perm p { margin: 0; font-size: 14px; color: var(--muted); }
 
     /* ---------- Footer ---------- */
-    footer { max-width: 920px; margin: 0 auto; padding: 10px 24px 120px; color: var(--muted); font-size: 13.5px; text-align: center; }
+    footer { max-width: 780px; margin: 0 auto; padding: 8px 20px 100px; color: var(--muted); font-size: 13.5px; text-align: center; }
     .contact-card {
-      background: linear-gradient(160deg, rgba(59,130,246,0.14), rgba(34,211,238,0.05));
-      border: 1px solid rgba(96,165,250,0.28); border-radius: var(--radius);
-      padding: 32px clamp(20px,4vw,40px); box-shadow: var(--glow); margin-bottom: 26px; text-align: left;
-      backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+      background: var(--bg-soft); border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 30px clamp(20px,4vw,38px); box-shadow: var(--shadow); margin-bottom: 24px; text-align: left;
     }
-    .contact-card h3 { margin: 0 0 6px; color: var(--ink); font-size: 20px; }
+    .contact-card h3 { margin: 0 0 6px; color: var(--ink); font-size: 19px; }
     .contact-card p { margin: 0 0 18px; color: var(--body); }
     .wa-btn {
-      display: inline-flex; align-items: center; gap: 11px; padding: 13px 22px; border-radius: 14px;
-      background: linear-gradient(135deg, #25d366, #1ebe5b); color: #04210f; font-weight: 800; font-size: 15px;
-      box-shadow: 0 14px 34px -12px rgba(37,211,102,0.6); transition: transform .15s ease, box-shadow .15s ease;
+      display: inline-flex; align-items: center; gap: 10px; padding: 12px 20px; border-radius: 12px;
+      background: #25d366; color: #04210f; font-weight: 800; font-size: 15px;
+      box-shadow: 0 8px 20px -10px rgba(37,211,102,.5); transition: transform .15s ease;
     }
-    .wa-btn:hover { transform: translateY(-2px); text-decoration: none; box-shadow: 0 18px 42px -12px rgba(37,211,102,0.72); }
-    .wa-btn svg { width: 22px; height: 22px; }
+    .wa-btn:hover { transform: translateY(-1px); text-decoration: none; }
+    .wa-btn svg { width: 21px; height: 21px; }
 
-    .socials { display: flex; gap: 12px; margin-top: 20px; flex-wrap: wrap; }
+    .socials { display: flex; gap: 10px; margin-top: 18px; flex-wrap: wrap; }
     .soc {
-      width: 46px; height: 46px; border-radius: 13px; display: grid; place-items: center;
-      background: rgba(255,255,255,0.05); border: 1px solid var(--line);
-      transition: transform .15s ease, border-color .15s ease, background .15s ease;
+      width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center;
+      background: #fff; border: 1px solid var(--line); color: var(--ink);
+      transition: border-color .15s ease, background .15s ease;
     }
-    .soc:hover { transform: translateY(-3px); border-color: rgba(96,165,250,0.5); background: rgba(59,130,246,0.16); }
-    .soc svg { width: 22px; height: 22px; }
+    .soc:hover { border-color: var(--brand); background: var(--brand-soft); }
+    .soc svg { width: 21px; height: 21px; }
 
     .foot-meta { line-height: 1.9; }
-    .foot-meta a { color: var(--blue-bright); }
+    .foot-meta a { color: var(--brand); }
 
     /* ---------- Floating WhatsApp ---------- */
     .wa-float {
-      position: fixed; right: 22px; bottom: 22px; z-index: 50;
-      display: inline-flex; align-items: center; gap: 10px; padding: 14px 20px 14px 16px;
-      border-radius: 999px; background: linear-gradient(135deg, #25d366, #1ebe5b); color: #04210f;
-      font-weight: 800; font-size: 14.5px; box-shadow: 0 16px 40px -10px rgba(37,211,102,0.65);
-      transition: transform .16s ease, box-shadow .16s ease;
+      position: fixed; right: 18px; bottom: 18px; z-index: 50;
+      display: inline-flex; align-items: center; gap: 10px; padding: 13px 18px 13px 15px;
+      border-radius: 999px; background: #25d366; color: #04210f;
+      font-weight: 800; font-size: 14px; box-shadow: 0 10px 26px -10px rgba(37,211,102,.5);
+      transition: transform .15s ease;
     }
-    .wa-float:hover { transform: translateY(-3px) scale(1.02); text-decoration: none; box-shadow: 0 22px 52px -12px rgba(37,211,102,0.8); }
-    .wa-float svg { width: 26px; height: 26px; }
+    .wa-float:hover { transform: translateY(-2px); text-decoration: none; }
+    .wa-float svg { width: 24px; height: 24px; }
     .wa-float .lbl { white-space: nowrap; }
-    @media (max-width: 560px) {
+
+    /* ---------- Mobile ---------- */
+    @media (max-width: 640px) {
+      header { padding: 32px 16px 20px; }
+      .brand { gap: 12px; margin-bottom: 18px; }
+      .logo-wrap { width: 48px; height: 48px; border-radius: 12px; }
+      .doctabs { padding: 0 16px; gap: 10px; }
+      .doctab { flex: 1 1 100%; }
+      main { padding: 24px 16px 8px; }
+      .card { padding: 24px 18px; border-radius: 12px; margin-bottom: 22px; }
+      .toc { padding: 16px 18px; }
+      .toc ol { columns: 1; padding-left: 18px; }
+      h3.item { font-size: 17px; margin-top: 28px; }
+      .contact-card { padding: 24px 18px; }
+      footer { padding: 8px 16px 92px; }
       .wa-float .lbl { display: none; }
-      .wa-float { padding: 16px; }
-      .toc ol { columns: 1; }
-      header { padding: 46px 20px 30px; }
+      .wa-float { padding: 15px; right: 14px; bottom: 14px; }
     }
   </style>
 </head>
@@ -209,28 +201,28 @@
             <path d="M32 9a4 4 0 0 1 4 4v1.3c7.6 1.8 12.5 8.6 12.5 17.2v6.1l3.7 5.6a1.8 1.8 0 0 1-1.5 2.8H13.3a1.8 1.8 0 0 1-1.5-2.8l3.7-5.6v-6.1c0-8.6 4.9-15.4 12.5-17.2V13a4 4 0 0 1 4-4Z"
                   fill="url(#bellGrad)"/>
             <path d="M25.5 50a6.5 6.5 0 0 0 13 0Z" fill="url(#bellGrad)"/>
-            <path d="M15 13 49 51" stroke="#0a1730" stroke-width="5.4" stroke-linecap="round"/>
+            <path d="M15 13 49 51" stroke="#ffffff" stroke-width="5.4" stroke-linecap="round"/>
             <path d="M15 13 49 51" stroke="#e2f0ff" stroke-width="2.2" stroke-linecap="round"/>
           </svg>
         </div>
         <div>
           <div class="brand-name">SilentMeet</div>
-          <div class="brand-sub">Meeting Silent · by Muhammad Zaid Asghar</div>
+          <div class="brand-sub">Meeting Silent Â· by Muhammad Zaid Asghar</div>
         </div>
       </div>
       <h1>Privacy Policy &amp; Terms of Service</h1>
-      <p class="lede">How SilentMeet handles your location, data, and privacy — and the terms under which you use the app.</p>
+      <p class="lede">How SilentMeet handles your location, data, and privacy â€” and the terms under which you use the app.</p>
       <span class="updated"><span class="dot"></span> Last updated: July 17, 2026</span>
     </div>
   </header>
 
   <nav class="doctabs">
     <a class="doctab priv" href="#privacy">
-      <span class="ico">🛡️</span>
+      <span class="ico">ðŸ›¡ï¸</span>
       <span>Privacy Policy<small>Location, data &amp; your rights</small></span>
     </a>
     <a class="doctab terms" href="#terms">
-      <span class="ico">📜</span>
+      <span class="ico">ðŸ“œ</span>
       <span>Terms &amp; Conditions<small>Rules for using SilentMeet</small></span>
     </a>
   </nav>
@@ -240,7 +232,7 @@
     <section class="card" id="privacy">
       <span class="section-tag tag-cyan">Privacy Policy</span>
       <h2 class="doc-title">Privacy Policy</h2>
-      <p class="doc-meta">Effective date: July 17, 2026 &nbsp;•&nbsp; Applies to the SilentMeet (Meeting Silent) Android application.</p>
+      <p class="doc-meta">Effective date: July 17, 2026 &nbsp;â€¢&nbsp; Applies to the SilentMeet (Meeting Silent) Android application.</p>
 
       <div class="toc">
         <h3>Contents</h3>
@@ -266,18 +258,18 @@
 
       <h3 class="item" id="p-collect"><span class="num">2.</span> Information We Collect</h3>
       <ul class="clean">
-        <li><strong>Location data</strong> — used to detect when you enter or leave your Silent Zones (see Section 3).</li>
-        <li><strong>Account information (optional)</strong> — if you choose to sign in with Google, we receive your name, email address, and profile photo through Google / Firebase Authentication. Signing in is optional; the app can be used as a guest.</li>
-        <li><strong>App preferences and content you create</strong> — your Silent Zones, schedules, sound/volume profiles, selected language, faith profile, and similar settings.</li>
-        <li><strong>Subscription status</strong> — whether you are on a free trial, guest, or premium plan, so your entitlement is honored across reinstalls.</li>
-        <li><strong>Approximate diagnostic and device info</strong> — such as operating-system version and coarse region, used to apply the correct prayer-time calculation method and to keep the app stable.</li>
+        <li><strong>Location data</strong> â€” used to detect when you enter or leave your Silent Zones (see Section 3).</li>
+        <li><strong>Account information (optional)</strong> â€” if you choose to sign in with Google, we receive your name, email address, and profile photo through Google / Firebase Authentication. Signing in is optional; the app can be used as a guest.</li>
+        <li><strong>App preferences and content you create</strong> â€” your Silent Zones, schedules, sound/volume profiles, selected language, faith profile, and similar settings.</li>
+        <li><strong>Subscription status</strong> â€” whether you are on a free trial, guest, or premium plan, so your entitlement is honored across reinstalls.</li>
+        <li><strong>Approximate diagnostic and device info</strong> â€” such as operating-system version and coarse region, used to apply the correct prayer-time calculation method and to keep the app stable.</li>
       </ul>
       <p>We do <strong>not</strong> collect your contacts, call logs, messages, photos, or microphone audio. We do not sell your personal information.</p>
 
       <h3 class="item" id="p-location"><span class="num">3.</span> Location Data &amp; Geofencing</h3>
       <div class="callout">
         <strong>Background location disclosure</strong>
-        SilentMeet uses location data — including <strong>in the background</strong> — solely to detect when you enter or exit a Silent Zone you have created, so it can automatically silence or restore your phone. Background location is never used for advertising, tracking, or profiling.
+        SilentMeet uses location data â€” including <strong>in the background</strong> â€” solely to detect when you enter or exit a Silent Zone you have created, so it can automatically silence or restore your phone. Background location is never used for advertising, tracking, or profiling.
       </div>
       <p>Location is central to the app's purpose:</p>
       <ul class="clean">
@@ -292,14 +284,14 @@
       <p>If you sign in, a minimal set of data (such as your subscription status and faith identity) may be stored in <strong>Google Firebase (Cloud Firestore)</strong> so your plan and preferences can be restored if you reinstall or switch devices.</p>
 
       <h3 class="item" id="p-permissions"><span class="num">5.</span> Device Permissions We Request</h3>
-      <p>SilentMeet requests permissions <strong>contextually</strong> — only when a feature needs them — and explains why beforehand:</p>
+      <p>SilentMeet requests permissions <strong>contextually</strong> â€” only when a feature needs them â€” and explains why beforehand:</p>
       <div class="perm-grid">
-        <div class="perm"><h4><span class="pico">📍</span> Location</h4><p>Detect Silent Zone entry/exit and compute local prayer times.</p></div>
-        <div class="perm"><h4><span class="pico">🔔</span> Notifications</h4><p>Show silence status, reminders, and prayer/schedule alerts.</p></div>
-        <div class="perm"><h4><span class="pico">🌙</span> Do Not Disturb access</h4><p>Silence and restore your ringer/DND state automatically.</p></div>
-        <div class="perm"><h4><span class="pico">⏰</span> Exact alarms</h4><p>Fire prayer and scheduled reminders at the precise time.</p></div>
-        <div class="perm"><h4><span class="pico">🔋</span> Battery optimization</h4><p>Allow reliable background silencing without the OS killing the service.</p></div>
-        <div class="perm"><h4><span class="pico">🔄</span> Run at startup</h4><p>Re-arm your zones and schedules after a device restart.</p></div>
+        <div class="perm"><h4><span class="pico">ðŸ“</span> Location</h4><p>Detect Silent Zone entry/exit and compute local prayer times.</p></div>
+        <div class="perm"><h4><span class="pico">ðŸ””</span> Notifications</h4><p>Show silence status, reminders, and prayer/schedule alerts.</p></div>
+        <div class="perm"><h4><span class="pico">ðŸŒ™</span> Do Not Disturb access</h4><p>Silence and restore your ringer/DND state automatically.</p></div>
+        <div class="perm"><h4><span class="pico">â°</span> Exact alarms</h4><p>Fire prayer and scheduled reminders at the precise time.</p></div>
+        <div class="perm"><h4><span class="pico">ðŸ”‹</span> Battery optimization</h4><p>Allow reliable background silencing without the OS killing the service.</p></div>
+        <div class="perm"><h4><span class="pico">ðŸ”„</span> Run at startup</h4><p>Re-arm your zones and schedules after a device restart.</p></div>
       </div>
 
       <h3 class="item" id="p-use"><span class="num">6.</span> How We Use Information</h3>
@@ -313,9 +305,9 @@
       <h3 class="item" id="p-sharing"><span class="num">7.</span> Data Sharing &amp; Third-Party Services</h3>
       <p>We do not sell or rent your personal data. Limited data is processed by trusted providers strictly to operate the app:</p>
       <ul class="clean">
-        <li><strong>Google Firebase</strong> (Authentication &amp; Cloud Firestore) — optional sign-in and subscription/preference sync.</li>
-        <li><strong>Google Play Services &amp; Google Maps</strong> — map display, location services, and geofencing on Android.</li>
-        <li><strong>Google Play Billing</strong> — if you purchase a subscription, payment is handled by Google; we do not receive your card details.</li>
+        <li><strong>Google Firebase</strong> (Authentication &amp; Cloud Firestore) â€” optional sign-in and subscription/preference sync.</li>
+        <li><strong>Google Play Services &amp; Google Maps</strong> â€” map display, location services, and geofencing on Android.</li>
+        <li><strong>Google Play Billing</strong> â€” if you purchase a subscription, payment is handled by Google; we do not receive your card details.</li>
       </ul>
       <p>These providers process data under their own privacy policies. We share information only as needed to provide the service or where required by law.</p>
 
@@ -324,10 +316,10 @@
 
       <h3 class="item" id="p-rights"><span class="num">9.</span> Your Rights &amp; Choices</h3>
       <ul class="clean">
-        <li><strong>Access &amp; control</strong> — view and edit your zones, schedules, and preferences at any time in the app.</li>
-        <li><strong>Revoke permissions</strong> — turn off location, notifications, or DND access in your device settings whenever you like.</li>
-        <li><strong>Delete your data</strong> — clear the app's storage or uninstall to remove local data; contact us to delete any cloud-synced account data.</li>
-        <li><strong>Use as a guest</strong> — you can use core features without creating an account.</li>
+        <li><strong>Access &amp; control</strong> â€” view and edit your zones, schedules, and preferences at any time in the app.</li>
+        <li><strong>Revoke permissions</strong> â€” turn off location, notifications, or DND access in your device settings whenever you like.</li>
+        <li><strong>Delete your data</strong> â€” clear the app's storage or uninstall to remove local data; contact us to delete any cloud-synced account data.</li>
+        <li><strong>Use as a guest</strong> â€” you can use core features without creating an account.</li>
       </ul>
 
       <h3 class="item" id="p-children"><span class="num">10.</span> Children's Privacy</h3>
@@ -338,14 +330,14 @@
 
       <h3 class="item" id="p-contact"><span class="num">12.</span> Contact Us</h3>
       <p>Questions about this Privacy Policy or your data? Reach us at <a href="mailto:codexzaid001@gmail.com">codexzaid001@gmail.com</a>.</p>
-      <p><a href="#privacy">↑ Back to top</a></p>
+      <p><a href="#privacy">â†‘ Back to top</a></p>
     </section>
 
     <!-- ================= TERMS ================= -->
     <section class="card terms" id="terms">
       <span class="section-tag tag-blue">Terms &amp; Conditions</span>
       <h2 class="doc-title">Terms &amp; Conditions</h2>
-      <p class="doc-meta">Effective date: July 17, 2026 &nbsp;•&nbsp; Please read these terms carefully before using SilentMeet.</p>
+      <p class="doc-meta">Effective date: July 17, 2026 &nbsp;â€¢&nbsp; Please read these terms carefully before using SilentMeet.</p>
 
       <div class="toc">
         <h3>Contents</h3>
@@ -373,7 +365,7 @@
 
       <h3 class="item" id="t-automation"><span class="num">3.</span> Silencing &amp; Automation Disclaimer</h3>
       <div class="callout blue">
-        <strong>Important — please read</strong>
+        <strong>Important â€” please read</strong>
         SilentMeet automates your ringer, Do Not Disturb, and volume based on location and schedules. Automatic silencing depends on your device's GPS accuracy, operating-system behavior, battery settings, and manufacturer restrictions, and may be delayed or may not trigger in all conditions.
       </div>
       <p>You are solely responsible for your device's ringer state and for any calls, alarms, or notifications you may miss while the phone is silenced. Do not rely on SilentMeet as the sole safeguard in situations where missing a call or alert could cause harm or loss. You are responsible for verifying your ringer state when it matters.</p>
@@ -396,7 +388,7 @@
       <p>The app is provided on an <strong>"as is"</strong> and <strong>"as available"</strong> basis, without warranties of any kind, whether express or implied, including fitness for a particular purpose, reliability, or uninterrupted or error-free operation.</p>
 
       <h3 class="item" id="t-liability"><span class="num">8.</span> Limitation of Liability</h3>
-      <p>To the maximum extent permitted by law, Muhammad Zaid Asghar shall not be liable for any indirect, incidental, special, or consequential damages — including missed calls, notifications, or alarms, or any loss arising from reliance on the app's automatic silencing — resulting from your use of, or inability to use, SilentMeet.</p>
+      <p>To the maximum extent permitted by law, Muhammad Zaid Asghar shall not be liable for any indirect, incidental, special, or consequential damages â€” including missed calls, notifications, or alarms, or any loss arising from reliance on the app's automatic silencing â€” resulting from your use of, or inability to use, SilentMeet.</p>
 
       <h3 class="item" id="t-termination"><span class="num">9.</span> Termination</h3>
       <p>You may stop using the app and uninstall it at any time. We may suspend or terminate access if you breach these terms or misuse the app. Provisions that by their nature should survive termination will continue to apply.</p>
@@ -409,14 +401,14 @@
 
       <h3 class="item" id="t-contact"><span class="num">12.</span> Contact</h3>
       <p>For questions about these terms, contact us at <a href="mailto:codexzaid001@gmail.com">codexzaid001@gmail.com</a>.</p>
-      <p><a href="#terms">↑ Back to top</a></p>
+      <p><a href="#terms">â†‘ Back to top</a></p>
     </section>
   </main>
 
   <footer>
     <div class="contact-card">
-      <h3>SilentMeet · Meeting Silent</h3>
-      <p>Developed by <strong>Muhammad Zaid Asghar</strong> · Have a question or need support? We're happy to help.</p>
+      <h3>SilentMeet Â· Meeting Silent</h3>
+      <p>Developed by <strong>Muhammad Zaid Asghar</strong> Â· Have a question or need support? We're happy to help.</p>
       <a class="wa-btn" href="https://wa.me/923084417971?text=Hi%20Zaid%2C%20I%20have%20a%20query%20regarding%20SilentMeet" target="_blank" rel="noopener">
         <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.04 3C9.42 3 4.03 8.38 4.03 15c0 2.12.56 4.19 1.62 6.01L4 29l8.2-1.6a12 12 0 0 0 3.84.63h.01c6.62 0 12-5.38 12.01-12S22.66 3 16.04 3Zm0 21.64h-.01a9.6 9.6 0 0 1-4.9-1.34l-.35-.21-3.65.71.72-3.56-.23-.37a9.62 9.62 0 0 1-1.47-5.11c0-5.3 4.32-9.62 9.63-9.62 2.57 0 4.98 1 6.8 2.82a9.55 9.55 0 0 1 2.82 6.81c-.01 5.31-4.33 9.63-9.63 9.63Zm5.28-7.2c-.29-.14-1.71-.85-1.98-.94-.27-.1-.46-.14-.65.15-.19.29-.75.94-.92 1.13-.17.19-.34.22-.63.07-.29-.14-1.22-.45-2.33-1.44-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.59.13-.13.29-.34.43-.51.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.14-.65-1.57-.89-2.15-.24-.56-.48-.48-.65-.49l-.56-.01c-.19 0-.51.07-.77.36-.27.29-1.01.99-1.01 2.42s1.04 2.81 1.18 3c.14.19 2.04 3.12 4.95 4.38.69.3 1.23.48 1.65.61.69.22 1.32.19 1.82.12.56-.08 1.71-.7 1.95-1.37.24-.67.24-1.25.17-1.37-.07-.12-.26-.19-.55-.34Z"/></svg>
         Contact on WhatsApp
@@ -433,7 +425,7 @@
         </a>
       </div>
     </div>
-    <p class="foot-meta">© 2026 Muhammad Zaid Asghar. All rights reserved. &nbsp;•&nbsp; <a href="#privacy">Privacy Policy</a> &nbsp;•&nbsp; <a href="#terms">Terms &amp; Conditions</a><br>Contact: <a href="mailto:codexzaid001@gmail.com">codexzaid001@gmail.com</a></p>
+    <p class="foot-meta">Â© 2026 Muhammad Zaid Asghar. All rights reserved. &nbsp;â€¢&nbsp; <a href="#privacy">Privacy Policy</a> &nbsp;â€¢&nbsp; <a href="#terms">Terms &amp; Conditions</a><br>Contact: <a href="mailto:codexzaid001@gmail.com">codexzaid001@gmail.com</a></p>
   </footer>
 
   <!-- Floating WhatsApp -->
